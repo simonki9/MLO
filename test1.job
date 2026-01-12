@@ -1,0 +1,9 @@
+#!/bin/bash
+#SBATCH -J simonjob
+#SBATCH -t 0:01:00
+#SBATCH -p thin_course
+#SBATCH -N 1
+#SBATCH --tasks-per-node 16
+#SBATCH --output=R-%x.%j.out
+
+python test1.py
